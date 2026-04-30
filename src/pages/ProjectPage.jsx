@@ -109,21 +109,22 @@ export default function ProjectPage() {
             </a>
           )}
           {project.map && (
-            <div className="mt-16 -mx-6 md:-mx-20">
-              <h2 className="text-2xl font-semibold mb-4 px-6 md:px-20">
-                Interactive Map
-              </h2>
+            <div className="relative left-1/2 mt-16 w-screen -translate-x-1/2 px-6">
+              <div className="mx-auto max-w-7xl">
+                <h2 className="text-3xl font-semibold">Interactive Map</h2>
 
-              <p className="text-sm text-zinc-600 mb-4 px-6 md:px-20">
-                This map visualizes Airbnb listings across major U.S. cities, highlighting spatial pricing patterns and clustering behavior.
-              </p>
+                <p className="mt-4 max-w-3xl text-sm leading-6 text-zinc-600">
+                  This map visualizes Airbnb listings across major U.S. cities,
+                  highlighting spatial pricing patterns and clustering behavior.
+                </p>
 
-              <div className="overflow-hidden border border-zinc-200 rounded-none md:rounded-3xl">
-                <iframe
-                  src={project.map}
-                  className="w-full h-[85vh]"
-                  title="Airbnb Map"
-                />
+                <div className="mt-6 overflow-hidden rounded-3xl border border-zinc-200 shadow-sm">
+                  <iframe
+                    src={project.map}
+                    className="h-[85vh] w-full"
+                    title="Airbnb Map"
+                  />
+                </div>
               </div>
             </div>
           )}

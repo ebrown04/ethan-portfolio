@@ -4,7 +4,7 @@ export const projects = [
     title: "Airbnb Price Prediction Model",
     category: "Machine Learning / Data Science",
     summary: "Built predictive models using Airbnb listing data.",
-    tools: ["Python"],
+    tools: ["Python", "Kepler.gl"],
     description: "This project uses a dataset of over 100,000 Airbnb listings across more than 30 U.S. cities to analyze and predict listing prices. The goal was to understand the key factors that drive pricing in short-term rental markets and to evaluate the performance of different machine learning models in predicting prices. I implemented and compared several models, including linear regression, regularized regression (Lasso and Ridge), decision trees, random forests, and support vector regression. The analysis focused on both predictive accuracy and interpretability, with particular attention to feature importance and how factors such as location, availability, reviews, and property characteristics influence price. The results showed that ensemble methods, particularly Random Forest, performed the best in terms of prediction accuracy, while linear and regularized models provided useful insight into the relative importance of features. This project strengthened my ability to work with large, real-world datasets, apply machine learning methods, and interpret results in an economic context.",
     pdf: "/files/airbnb-report.pdf",
     code: "/files/airbnb-code.ipynb",

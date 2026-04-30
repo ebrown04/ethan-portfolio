@@ -4,6 +4,7 @@ import berryLogo from "../assets/berry-logo.jpg";
 import utkLogo from "../assets/UTK-logo.png";
 import gasSouthLogo from "../assets/gassouth-logo.jpg";
 import shipyardLogo from "../assets/shipyard-logo.jpg";
+import transcript from "../assets/transcript.pdf";
 import { projects } from "../data/projects";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/ethanbrown04/";
@@ -125,6 +126,14 @@ export default function Home() {
               className="rounded-full border border-zinc-300 px-5 py-3 text-sm font-medium hover:border-zinc-950"
             >
               GitHub
+
+            </a>
+                        <a
+              href={transcript}
+              target="_blank"
+              className="rounded-full border border-zinc-300 px-5 py-3 text-sm font-medium hover:border-zinc-950"
+            >
+              Transcript
             </a>
           </div>
 
@@ -296,7 +305,7 @@ export default function Home() {
           <div className="rounded-3xl border border-zinc-200 bg-zinc-50 p-6">
             <h3 className="text-xl font-semibold">Statistical tools</h3>
             <p className="mt-4 text-sm leading-7 text-zinc-600">
-              Python · R · Stata · SQL · Pandas · scikit-learn
+              Python · R · Stata · SQL · MatLab
             </p>
           </div>
 
@@ -325,8 +334,7 @@ export default function Home() {
           </h2>
 
           <p className="mt-4 max-w-2xl text-zinc-300">
-            I am interested in research opportunities, applied analytics work,
-            economics graduate preparation, and projects involving real-world data.
+            I am interested in research opportunities, applied analytics work, and projects involving real-world data.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">

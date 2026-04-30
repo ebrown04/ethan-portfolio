@@ -7,23 +7,25 @@ export default function ProjectPage() {
 
   if (!project) {
     return (
-      <main className="min-h-screen bg-zinc-950 text-white px-6 py-20">
-        <h1 className="text-3xl font-semibold">Project not found</h1>
-        <Link to="/" className="mt-6 inline-block text-zinc-300 underline">
-          Back home
-        </Link>
+      <main className="min-h-screen bg-white px-6 py-20 text-zinc-950">
+        <section className="mx-auto max-w-4xl">
+          <h1 className="text-3xl font-semibold">Project not found</h1>
+          <Link to="/" className="mt-6 inline-block underline">
+            Back home
+          </Link>
+        </section>
       </main>
     );
   }
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white">
+    <main className="min-h-screen bg-white text-zinc-950">
       <section className="mx-auto max-w-4xl px-6 py-20">
-        <Link to="/" className="text-sm text-zinc-400 hover:text-white">
+        <Link to="/" className="text-sm text-zinc-500 hover:text-zinc-950">
           ← Back to portfolio
         </Link>
 
-        <p className="mt-10 text-sm uppercase tracking-[0.3em] text-zinc-400">
+        <p className="mt-12 text-sm font-medium uppercase tracking-[0.3em] text-zinc-500">
           {project.category}
         </p>
 
@@ -31,7 +33,7 @@ export default function ProjectPage() {
           {project.title}
         </h1>
 
-        <p className="mt-6 text-lg leading-8 text-zinc-300">
+        <p className="mt-6 text-lg leading-8 text-zinc-600">
           {project.description}
         </p>
 
@@ -39,7 +41,7 @@ export default function ProjectPage() {
           {project.tools.map((tool) => (
             <span
               key={tool}
-              className="rounded-full border border-zinc-700 px-4 py-2 text-sm text-zinc-300"
+              className="rounded-full border border-zinc-300 bg-zinc-50 px-4 py-2 text-sm text-zinc-700"
             >
               {tool}
             </span>
@@ -50,37 +52,43 @@ export default function ProjectPage() {
           <a
             href={project.pdf}
             target="_blank"
-            className="rounded-3xl border border-zinc-800 bg-zinc-900 p-6 hover:border-zinc-500 transition"
+            className="rounded-3xl border border-zinc-200 bg-zinc-50 p-6 transition hover:border-zinc-400"
           >
             <h2 className="text-xl font-semibold">Project PDF</h2>
-            <p className="mt-3 text-sm text-zinc-300">
-              View report, writeup, poster, or presentation.
+            <p className="mt-3 text-sm leading-6 text-zinc-600">
+              Add your report, poster, presentation, or writeup here.
             </p>
           </a>
 
           <a
             href={project.github}
             target="_blank"
-            className="rounded-3xl border border-zinc-800 bg-zinc-900 p-6 hover:border-zinc-500 transition"
+            className="rounded-3xl border border-zinc-200 bg-zinc-50 p-6 transition hover:border-zinc-400"
           >
             <h2 className="text-xl font-semibold">Code / GitHub</h2>
-            <p className="mt-3 text-sm text-zinc-300">
-              View notebooks, scripts, or project files.
+            <p className="mt-3 text-sm leading-6 text-zinc-600">
+              Link notebooks, scripts, dashboards, or project repositories.
             </p>
           </a>
         </div>
 
-        <section className="mt-14">
-          <h2 className="text-2xl font-semibold">What I would add here</h2>
+        <section className="mt-16 border-t border-zinc-200 pt-10">
+          <h2 className="text-2xl font-semibold">Project structure</h2>
 
-          <ul className="mt-5 space-y-3 text-zinc-300">
-            <li>• Research question</li>
-            <li>• Dataset description</li>
-            <li>• Methods used</li>
-            <li>• Model results</li>
-            <li>• Charts and screenshots</li>
-            <li>• What I learned</li>
-          </ul>
+          <div className="mt-6 grid gap-5">
+            {[
+              ["Research Question", "What question was this project designed to answer?"],
+              ["Data", "What dataset did you use, and what made it challenging or interesting?"],
+              ["Methods", "What models, tools, or analytical methods did you apply?"],
+              ["Results", "What did you find? Include model performance, visuals, or key takeaways."],
+              ["Reflection", "What did this project teach you, and how would you improve it?"],
+            ].map(([title, text]) => (
+              <div key={title} className="rounded-3xl border border-zinc-200 bg-white p-6">
+                <h3 className="text-lg font-semibold">{title}</h3>
+                <p className="mt-2 text-sm leading-6 text-zinc-600">{text}</p>
+              </div>
+            ))}
+          </div>
         </section>
       </section>
     </main>

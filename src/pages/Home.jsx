@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import headshot from "../assets/EthanHeadshot.jpg";
+import headshot from "../assets/EthanHeadshot.JPG";
 import { projects } from "../data/projects";
 
 

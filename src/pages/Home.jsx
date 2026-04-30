@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import headshot from "../assets/EthanHeadshot.JPG";
 import berryLogo from "../assets/berry-logo.jpg";
-import utkLogo from "../assets/UTK-logo.jpg";
+import utkLogo from "../assets/UTK-logo.png";
 import gasSouthLogo from "../assets/gassouth-logo.jpg";
 import shipyardLogo from "../assets/shipyard-logo.jpg";
 import { projects } from "../data/projects";
@@ -94,30 +94,7 @@ export default function Home() {
         </h2>
 
         <div className="mt-8 space-y-5">
-          <div className="rounded-3xl border border-zinc-200 bg-zinc-50 p-6">
-            <div className="flex gap-5">
-              <LogoBox src={berryLogo} alt="Berry College logo" />
 
-              <div className="flex-1">
-                <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
-                  <div>
-                    <h3 className="text-2xl font-semibold">Berry College</h3>
-                    <p className="mt-1 text-zinc-600">
-                      B.S. Economics and Data Analytics
-                    </p>
-                  </div>
-
-                  <p className="text-sm font-medium text-zinc-500">
-                    Expected May 2026
-                  </p>
-                </div>
-
-                <p className="mt-4 text-sm leading-6 text-zinc-600">
-                  Dean’s List · Barry Griswell Scholar · TRIO SSS Scholar · Zell Miller Recipient
-                </p>
-              </div>
-            </div>
-          </div>
 
           <div className="rounded-3xl border border-zinc-200 bg-zinc-50 p-6">
             <div className="flex gap-5">
@@ -138,14 +115,34 @@ export default function Home() {
                     Aug. 2026 – May 2027, expected
                   </p>
                 </div>
-
-                <p className="mt-4 text-sm leading-6 text-zinc-600">
-                  Graduate study preparation in economics, econometrics, and applied research.
-                </p>
               </div>
             </div>
           </div>
         </div>
+                  <div className="rounded-3xl border border-zinc-200 bg-zinc-50 p-6">
+            <div className="flex gap-5">
+              <LogoBox src={berryLogo} alt="Berry College logo" />
+
+              <div className="flex-1">
+                <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
+                  <div>
+                    <h3 className="text-2xl font-semibold">Berry College</h3>
+                    <p className="mt-1 text-zinc-600">
+                      B.S. Economics and Data Analytics
+                    </p>
+                  </div>
+
+                  <p className="text-sm font-medium text-zinc-500">
+                    Aug. 2022 - May 2026
+                  </p>
+                </div>
+
+                <p className="mt-4 text-sm leading-6 text-zinc-600">
+                  Dean’s List · Barry Griswell Scholar · TRIO SSS Scholar · Zell Miller Recipient
+                </p>
+              </div>
+            </div>
+          </div>
       </section>
 
       <section id="experience" className="mx-auto max-w-6xl px-6 py-16">

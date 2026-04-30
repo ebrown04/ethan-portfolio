@@ -3,13 +3,13 @@ export const projects = [
     slug: "airbnb-price-prediction",
     title: "Airbnb Price Prediction Model",
     category: "Machine Learning / Data Science",
-    summary:
-      "Built predictive models using Airbnb listing data to estimate prices and understand the strongest drivers of price variation.",
-    tools: ["Python", "Pandas", "scikit-learn", "Regression", "Feature Engineering"],
-    description:
-      "This project used a large Airbnb dataset to predict listing prices across multiple U.S. cities. I compared multiple machine learning models, evaluated prediction error, and interpreted feature importance to better understand what drives Airbnb pricing.",
-    pdf: "#",
-    github: "#",
+    summary: "Built predictive models using Airbnb listing data.",
+    tools: ["Python"],
+    description: "This project uses a dataset of over 100,000 Airbnb listings across more than 30 U.S. cities to analyze and predict listing prices. The goal was to understand the key factors that drive pricing in short-term rental markets and to evaluate the performance of different machine learning models in predicting prices. I implemented and compared several models, including linear regression, regularized regression (Lasso and Ridge), decision trees, random forests, and support vector regression. The analysis focused on both predictive accuracy and interpretability, with particular attention to feature importance and how factors such as location, availability, reviews, and property characteristics influence price. The results showed that ensemble methods, particularly Random Forest, performed the best in terms of prediction accuracy, while linear and regularized models provided useful insight into the relative importance of features. This project strengthened my ability to work with large, real-world datasets, apply machine learning methods, and interpret results in an economic context.",
+    pdf: "/files/airbnb-report.pdf",
+    code: "/files/airbnb-code.ipynb",
+    data: "https://insideairbnb.com/get-the-data/",
+    github: "https://github.com/ebrown04/Final-Project-Airbnb-Price-Prediction-Geospatial-Analysis"
   },
   {
     slug: "spotify-dashboard",
@@ -44,18 +44,6 @@ export const projects = [
     tools: ["Python", "Machine Learning", "ROC AUC", "Simulation", "Data Cleaning"],
     description:
       "This project explored whether GPS-based horse racing data improved predictive performance over traditional race variables. I worked with messy real-world datasets, tested model performance, and considered how predictions could support a live race simulation tool.",
-    pdf: "#",
-    github: "#",
-  },
-  {
-    slug: "gas-south-data-engineering",
-    title: "Data Engineering & Analytics — Gas South",
-    category: "Data Engineering / Analytics",
-    summary:
-      "Developed data engineering workflows to transform raw operational data into structured datasets for analysis.",
-    tools: ["Python", "SQL", "Pandas", "Data Cleaning", "Data Pipelines"],
-    description:
-      "This project focuses on data engineering and analytics work connected to Gas South. The emphasis was on cleaning, transforming, and structuring raw data so it could be used more effectively for analysis and decision-making.",
     pdf: "#",
     github: "#",
   },

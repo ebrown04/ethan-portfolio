@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import headshot from "../assets/EthanHeadshot.JPG";
-import berryLogo from "../assets/berry-logo.png";
-import utkLogo from "../assets/utk-logo.png";
-import gasSouthLogo from "../assets/gas-south-logo.png";
-import shipyardLogo from "../assets/shipyard-logo.png";
+import berryLogo from "../assets/berry-logo.jpg";
+import utkLogo from "../assets/UTK-logo.jpg";
+import gasSouthLogo from "../assets/gassouth-logo.jpg";
+import shipyardLogo from "../assets/shipyard-logo.jpg";
 import { projects } from "../data/projects";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/ethanbrown04/";

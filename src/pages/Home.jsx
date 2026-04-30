@@ -17,12 +17,12 @@ export default function Home() {
           </p>
 
           <h1 className="max-w-3xl text-5xl font-semibold tracking-tight">
-            Economics, data analytics, and applied research.
+            Economics, data analytics, and policy analysis.
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
             I am an undergraduate student at Berry College studying Economics and
-            Data Analytics. My interests focus on econometrics, applied research,
+            Data Analytics. My interests focus on econometrics, policy analysis,
             and using real-world data to answer questions in economics, business,
             and public policy. I plan to pursue a PhD in Economics.
           </p>

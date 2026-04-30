@@ -9,7 +9,8 @@ export const projects = [
     pdf: "/files/airbnb-report.pdf",
     code: "/files/airbnb-code.ipynb",
     data: "https://insideairbnb.com/get-the-data/",
-    github: "https://github.com/ebrown04/Final-Project-Airbnb-Price-Prediction-Geospatial-Analysis"
+    github: "https://github.com/ebrown04/Final-Project-Airbnb-Price-Prediction-Geospatial-Analysis",
+    map: "/maps/airbnb-map.html"
   },
   {
     slug: "spotify-dashboard",

@@ -108,6 +108,19 @@ export default function ProjectPage() {
               </p>
             </a>
           )}
+          {project.map && (
+            <div className="mt-12">
+              <h2 className="text-2xl font-semibold mb-4">Interactive Map</h2>
+
+              <div className="rounded-3xl overflow-hidden border border-zinc-200">
+                <iframe
+                  src={project.map}
+                  className="w-full h-[600px]"
+                  title="Kepler Map"
+                />
+              </div>
+            </div>
+          )}
 
         </div>
       </section>

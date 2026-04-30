@@ -1,11 +1,23 @@
 import { Link } from "react-router-dom";
 import headshot from "../assets/EthanHeadshot.JPG";
+import berryLogo from "../assets/berry-logo.png";
+import utkLogo from "../assets/utk-logo.png";
+import gasSouthLogo from "../assets/gas-south-logo.png";
+import shipyardLogo from "../assets/shipyard-logo.png";
 import { projects } from "../data/projects";
 
-const LINKEDIN_URL = "https://www.linkedin.com/in/YOUR-LINKEDIN/";
+const LINKEDIN_URL = "https://www.linkedin.com/in/ethanbrown04/";
 const GITHUB_URL = "https://github.com/ebrown04";
 const RESUME_URL = "/resume.pdf";
-const EMAIL = "your.email@example.com";
+const EMAIL = "Ethan.Brown@vikings.berry.edu";
+
+function LogoBox({ src, alt }) {
+  return (
+    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-zinc-200 bg-white p-2 shadow-sm">
+      <img src={src} alt={alt} className="max-h-full max-w-full object-contain" />
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -44,34 +56,19 @@ export default function Home() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href="#projects"
-              className="rounded-full bg-zinc-950 px-5 py-3 text-sm font-medium text-white hover:bg-zinc-800"
-            >
+            <a href="#projects" className="rounded-full bg-zinc-950 px-5 py-3 text-sm font-medium text-white hover:bg-zinc-800">
               View Projects
             </a>
 
-            <a
-              href={RESUME_URL}
-              target="_blank"
-              className="rounded-full border border-zinc-300 px-5 py-3 text-sm font-medium text-zinc-950 hover:border-zinc-950"
-            >
+            <a href={RESUME_URL} target="_blank" className="rounded-full border border-zinc-300 px-5 py-3 text-sm font-medium text-zinc-950 hover:border-zinc-950">
               Resume
             </a>
 
-            <a
-              href={LINKEDIN_URL}
-              target="_blank"
-              className="rounded-full border border-zinc-300 px-5 py-3 text-sm font-medium text-zinc-950 hover:border-zinc-950"
-            >
+            <a href={LINKEDIN_URL} target="_blank" className="rounded-full border border-zinc-300 px-5 py-3 text-sm font-medium text-zinc-950 hover:border-zinc-950">
               LinkedIn
             </a>
 
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              className="rounded-full border border-zinc-300 px-5 py-3 text-sm font-medium text-zinc-950 hover:border-zinc-950"
-            >
+            <a href={GITHUB_URL} target="_blank" className="rounded-full border border-zinc-300 px-5 py-3 text-sm font-medium text-zinc-950 hover:border-zinc-950">
               GitHub
             </a>
           </div>
@@ -96,41 +93,56 @@ export default function Home() {
           Academic background
         </h2>
 
-        <div className="mt-8 rounded-3xl border border-zinc-200 bg-zinc-50 p-6">
-          <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
-            <div>
-              <h3 className="text-2xl font-semibold">Berry College</h3>
-              <p className="mt-1 text-zinc-600">
-                B.S. Economics and Data Analytics
-              </p>
+        <div className="mt-8 space-y-5">
+          <div className="rounded-3xl border border-zinc-200 bg-zinc-50 p-6">
+            <div className="flex gap-5">
+              <LogoBox src={berryLogo} alt="Berry College logo" />
+
+              <div className="flex-1">
+                <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
+                  <div>
+                    <h3 className="text-2xl font-semibold">Berry College</h3>
+                    <p className="mt-1 text-zinc-600">
+                      B.S. Economics and Data Analytics
+                    </p>
+                  </div>
+
+                  <p className="text-sm font-medium text-zinc-500">
+                    Expected May 2026
+                  </p>
+                </div>
+
+                <p className="mt-4 text-sm leading-6 text-zinc-600">
+                  Dean’s List · Barry Griswell Scholar · TRIO SSS Scholar · Zell Miller Recipient
+                </p>
+              </div>
             </div>
-
-            <p className="text-sm font-medium text-zinc-500">
-              Expected May 2026
-            </p>
-          </div>
-                    <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
-            <div>
-              <h3 className="text-2xl font-semibold">University of Tennessee, Knoxville</h3>
-              <p className="mt-1 text-zinc-600">
-                M.A.
-              </p>
-            </div>
-
-            <p className="text-sm font-medium text-zinc-500">
-              Aug 2026 - May 2027 (expected)
-            </p>
           </div>
 
-          <div className="mt-6 grid gap-5 md:grid-cols-2">
-            <div>
-              <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500">
-                Academic interests
-              </h4>
-              <p className="mt-3 text-sm leading-6 text-zinc-600">
-                Econometrics, applied microeconomics, causal inference, machine
-                learning, public policy, and data-driven decision-making.
-              </p>
+          <div className="rounded-3xl border border-zinc-200 bg-zinc-50 p-6">
+            <div className="flex gap-5">
+              <LogoBox src={utkLogo} alt="University of Tennessee Knoxville logo" />
+
+              <div className="flex-1">
+                <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
+                  <div>
+                    <h3 className="text-2xl font-semibold">
+                      University of Tennessee, Knoxville
+                    </h3>
+                    <p className="mt-1 text-zinc-600">
+                      M.A. Economics
+                    </p>
+                  </div>
+
+                  <p className="text-sm font-medium text-zinc-500">
+                    Aug. 2026 – May 2027, expected
+                  </p>
+                </div>
+
+                <p className="mt-4 text-sm leading-6 text-zinc-600">
+                  Graduate study preparation in economics, econometrics, and applied research.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -146,96 +158,104 @@ export default function Home() {
 
         <div className="mt-8 space-y-6">
           <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
-            <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
-              <div>
-                <h3 className="text-2xl font-semibold">
-                  Data Engineering Internship
-                </h3>
-                <p className="mt-1 text-zinc-600">Gas South</p>
+            <div className="flex gap-5">
+              <LogoBox src={gasSouthLogo} alt="Gas South logo" />
+
+              <div className="flex-1">
+                <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
+                  <div>
+                    <h3 className="text-2xl font-semibold">
+                      Data Engineering Intern
+                    </h3>
+                    <p className="mt-1 text-zinc-600">Gas South · Atlanta, Georgia</p>
+                  </div>
+
+                  <p className="text-sm font-medium text-zinc-500">
+                    May 2025 – August 2025
+                  </p>
+                </div>
+
+                <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-6 text-zinc-600">
+                  <li>
+                    Optimized SQL queries to improve runtime efficiency and ensure cleaner data output across multiple reporting pipelines.
+                  </li>
+                  <li>
+                    Automated recurring reports, reducing manual workload for the business intelligence team.
+                  </li>
+                  <li>
+                    Performed data validation in SQL Server Management Studio to improve reporting reliability.
+                  </li>
+                  <li>
+                    Supported version-controlled ETL updates through Azure DevOps in collaboration with senior engineers.
+                  </li>
+                </ul>
               </div>
-
-              <p className="text-sm font-medium text-zinc-500">
-                Data Engineering Experience
-              </p>
             </div>
-
-            <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-6 text-zinc-600">
-              <li>
-                Worked with real-world operational data to support analytics,
-                reporting, and business decision-making.
-              </li>
-              <li>
-                Cleaned, transformed, and structured datasets for downstream
-                analysis.
-              </li>
-              <li>
-                Applied data engineering concepts to improve usability,
-                consistency, and accessibility of data.
-              </li>
-              <li>
-                Strengthened technical experience across data pipelines, SQL,
-                Python, and data warehouse workflows.
-              </li>
-            </ul>
           </div>
 
           <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
-            <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
-              <div>
-                <h3 className="text-2xl font-semibold">
-                  General Manager
-                </h3>
-                <p className="mt-1 text-zinc-600">
-                  The Shipyard, Berry College
-                </p>
+            <div className="flex gap-5">
+              <LogoBox src={berryLogo} alt="Berry College logo" />
+
+              <div className="flex-1">
+                <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
+                  <div>
+                    <h3 className="text-2xl font-semibold">
+                      Economics Tutor & Research Associate
+                    </h3>
+                    <p className="mt-1 text-zinc-600">Berry College · Rome, Georgia</p>
+                  </div>
+
+                  <p className="text-sm font-medium text-zinc-500">
+                    Jan. 2023 – May 2023; May 2025 – Present
+                  </p>
+                </div>
+
+                <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-6 text-zinc-600">
+                  <li>
+                    Tutored principles-level coursework emphasizing economic literacy, market price determination, government regulation, and international trade.
+                  </li>
+                  <li>
+                    Supported students in applied calculus and statistics, including optimization, probability, and introductory regression analysis used in economic and business applications.
+                  </li>
+                </ul>
               </div>
-
-              <p className="text-sm font-medium text-zinc-500">
-                Student-run bookstore
-              </p>
             </div>
-
-            <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-6 text-zinc-600">
-              <li>
-                 Lead operations for a student-run enterprise generating $500K+ in annual revenue.
-              </li>
-              <li>
-                Manage training and day-to-day supervision of 15+ student employees.
-              </li>
-              <li>
-                Implemented new systems (Thrive POS, Microsoft Teams) to streamline communication and order processing.
-              </li>
-            </ul>
           </div>
 
           <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
-            <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
-              <div>
-                <h3 className="text-2xl font-semibold">
-                  Economics & Data Analytics Student
-                </h3>
-                <p className="mt-1 text-zinc-600">Berry College</p>
+            <div className="flex gap-5">
+              <LogoBox src={shipyardLogo} alt="The Shipyard logo" />
+
+              <div className="flex-1">
+                <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
+                  <div>
+                    <h3 className="text-2xl font-semibold">
+                      Student General Manager
+                    </h3>
+                    <p className="mt-1 text-zinc-600">
+                      The Shipyard, Berry College
+                    </p>
+                  </div>
+
+                  <p className="text-sm font-medium text-zinc-500">
+                    Jan. 2023 – Present
+                  </p>
+                </div>
+
+                <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-6 text-zinc-600">
+                  <li>
+                    Lead operations for a student-run enterprise generating $500K+ in annual revenue.
+                  </li>
+                  <li>
+                    Manage training and day-to-day supervision of 15+ student employees.
+                  </li>
+                  <li>
+                    Implemented new systems, including Thrive POS and Microsoft Teams, to streamline communication and order processing.
+                  </li>
+                </ul>
               </div>
-
-              <p className="text-sm font-medium text-zinc-500">
-                Undergraduate coursework and projects
-              </p>
             </div>
-
-            <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-6 text-zinc-600">
-              <li>
-                Completed applied projects involving econometrics, machine
-                learning, data visualization, public policy, and business
-                analytics.
-              </li>
-              <li>
-                Built technical skills in Python, R, SQL, Sata, Excel, and Power BI.
-              </li>
-              <li>
-                Developed interest in research questions that connect economics,
-                policy, and real-world data.
-              </li>
-            </ul>
           </div>
         </div>
       </section>
@@ -294,10 +314,13 @@ export default function Home() {
             "Python",
             "R",
             "SQL",
+            "Stata",
             "Pandas",
             "scikit-learn",
             "Power BI",
             "Excel",
+            "SQL Server Management Studio",
+            "Azure DevOps",
             "Econometrics",
             "Machine Learning",
             "Data Engineering",
@@ -326,39 +349,23 @@ export default function Home() {
 
           <p className="mt-4 max-w-2xl text-zinc-300">
             I am interested in research opportunities, applied analytics work,
-            economics graduate preparation, and projects involving real-world
-            data.
+            economics graduate preparation, and projects involving real-world data.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={`mailto:${EMAIL}`}
-              className="rounded-full bg-white px-5 py-3 text-sm font-medium text-zinc-950"
-            >
+            <a href={`mailto:${EMAIL}`} className="rounded-full bg-white px-5 py-3 text-sm font-medium text-zinc-950">
               Email
             </a>
 
-            <a
-              href={LINKEDIN_URL}
-              target="_blank"
-              className="rounded-full border border-zinc-700 px-5 py-3 text-sm font-medium text-white hover:border-white"
-            >
+            <a href={LINKEDIN_URL} target="_blank" className="rounded-full border border-zinc-700 px-5 py-3 text-sm font-medium text-white hover:border-white">
               LinkedIn
             </a>
 
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              className="rounded-full border border-zinc-700 px-5 py-3 text-sm font-medium text-white hover:border-white"
-            >
+            <a href={GITHUB_URL} target="_blank" className="rounded-full border border-zinc-700 px-5 py-3 text-sm font-medium text-white hover:border-white">
               GitHub
             </a>
 
-            <a
-              href={RESUME_URL}
-              target="_blank"
-              className="rounded-full border border-zinc-700 px-5 py-3 text-sm font-medium text-white hover:border-white"
-            >
+            <a href={RESUME_URL} target="_blank" className="rounded-full border border-zinc-700 px-5 py-3 text-sm font-medium text-white hover:border-white">
               Resume
             </a>
           </div>

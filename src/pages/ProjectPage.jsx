@@ -109,14 +109,20 @@ export default function ProjectPage() {
             </a>
           )}
           {project.map && (
-            <div className="mt-12">
-              <h2 className="text-2xl font-semibold mb-4">Interactive Map</h2>
+            <div className="mt-16 -mx-6 md:-mx-12">
+              <h2 className="text-2xl font-semibold mb-4 px-6 md:px-12">
+                Interactive Map
+              </h2>
 
-              <div className="rounded-3xl overflow-hidden border border-zinc-200">
+              <p className="text-sm text-zinc-600 mb-4 px-6 md:px-12">
+                This map visualizes Airbnb listings across major U.S. cities, highlighting spatial pricing patterns and clustering behavior.
+              </p>
+
+              <div className="rounded-none md:rounded-3xl overflow-hidden border border-zinc-200">
                 <iframe
                   src={project.map}
-                  className="w-full h-[600px]"
-                  title="Kepler Map"
+                  className="w-full h-[800px]"
+                  title="Airbnb Map"
                 />
               </div>
             </div>

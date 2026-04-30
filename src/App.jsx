@@ -1,16 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import ProjectPage from "./pages/ProjectPage";
-import ScrollToTop from "./components/ScrollToTop";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-export default function App() {
-  return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects/:slug" element={<ProjectPage />} />
-      </Routes>
-    </BrowserRouter>
-  );
+export default function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }

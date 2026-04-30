@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 import headshot from "../assets/EthanHeadshot.JPG";
 import { projects } from "../data/projects";
 
-const LINKEDIN_URL = "https://www.linkedin.com/in/ethanbrown04";
+const LINKEDIN_URL = "https://www.linkedin.com/in/YOUR-LINKEDIN/";
 const GITHUB_URL = "https://github.com/ebrown04";
 const RESUME_URL = "/resume.pdf";
+const EMAIL = "your.email@example.com";
 
 export default function Home() {
   return (
@@ -16,8 +17,9 @@ export default function Home() {
           </a>
 
           <div className="hidden gap-6 text-sm text-zinc-600 md:flex">
-            <a href="#projects" className="hover:text-zinc-950">Projects</a>
+            <a href="#education" className="hover:text-zinc-950">Education</a>
             <a href="#experience" className="hover:text-zinc-950">Experience</a>
+            <a href="#projects" className="hover:text-zinc-950">Projects</a>
             <a href="#skills" className="hover:text-zinc-950">Skills</a>
             <a href="#contact" className="hover:text-zinc-950">Contact</a>
           </div>
@@ -86,33 +88,156 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 pb-8">
-        <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-3xl border border-zinc-200 bg-zinc-50 p-6">
-            <p className="text-sm font-medium text-zinc-500">Academic Direction</p>
-            <h3 className="mt-2 text-xl font-semibold">PhD preparation</h3>
-            <p className="mt-3 text-sm leading-6 text-zinc-600">
-              Building a foundation in economics, mathematics, econometrics, and
-              applied research.
+      <section id="education" className="mx-auto max-w-6xl px-6 py-16">
+        <p className="text-sm font-medium uppercase tracking-[0.3em] text-zinc-500">
+          Education
+        </p>
+        <h2 className="mt-3 text-4xl font-semibold tracking-tight">
+          Academic background
+        </h2>
+
+        <div className="mt-8 rounded-3xl border border-zinc-200 bg-zinc-50 p-6">
+          <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
+            <div>
+              <h3 className="text-2xl font-semibold">Berry College</h3>
+              <p className="mt-1 text-zinc-600">
+                B.S. Economics and Data Analytics
+              </p>
+            </div>
+
+            <p className="text-sm font-medium text-zinc-500">
+              Expected May 2026
             </p>
           </div>
 
-          <div className="rounded-3xl border border-zinc-200 bg-zinc-50 p-6">
-            <p className="text-sm font-medium text-zinc-500">Technical Focus</p>
-            <h3 className="mt-2 text-xl font-semibold">Data-driven analysis</h3>
-            <p className="mt-3 text-sm leading-6 text-zinc-600">
-              Using Python, R, SQL, visualization, and machine learning to work
-              with real datasets.
-            </p>
+          <div className="mt-6 grid gap-5 md:grid-cols-2">
+            <div>
+              <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500">
+                Academic interests
+              </h4>
+              <p className="mt-3 text-sm leading-6 text-zinc-600">
+                Econometrics, applied microeconomics, causal inference, machine
+                learning, public policy, and data-driven decision-making.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500">
+                Graduate direction
+              </h4>
+              <p className="mt-3 text-sm leading-6 text-zinc-600">
+                Preparing for graduate study in economics with the long-term goal
+                of pursuing a PhD in Economics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" className="mx-auto max-w-6xl px-6 py-16">
+        <p className="text-sm font-medium uppercase tracking-[0.3em] text-zinc-500">
+          Experience
+        </p>
+        <h2 className="mt-3 text-4xl font-semibold tracking-tight">
+          Resume-style experience
+        </h2>
+
+        <div className="mt-8 space-y-6">
+          <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
+              <div>
+                <h3 className="text-2xl font-semibold">
+                  Data Engineering & Analytics
+                </h3>
+                <p className="mt-1 text-zinc-600">Gas South</p>
+              </div>
+
+              <p className="text-sm font-medium text-zinc-500">
+                Data / Analytics Experience
+              </p>
+            </div>
+
+            <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-6 text-zinc-600">
+              <li>
+                Worked with real-world operational data to support analytics,
+                reporting, and business decision-making.
+              </li>
+              <li>
+                Cleaned, transformed, and structured datasets for downstream
+                analysis.
+              </li>
+              <li>
+                Applied data engineering concepts to improve usability,
+                consistency, and accessibility of data.
+              </li>
+              <li>
+                Strengthened technical experience across data pipelines, SQL,
+                Python, and applied analytics workflows.
+              </li>
+            </ul>
           </div>
 
-          <div className="rounded-3xl border border-zinc-200 bg-zinc-50 p-6">
-            <p className="text-sm font-medium text-zinc-500">Applied Experience</p>
-            <h3 className="mt-2 text-xl font-semibold">Operations + analytics</h3>
-            <p className="mt-3 text-sm leading-6 text-zinc-600">
-              Connecting business operations, student leadership, and analytical
-              decision-making.
-            </p>
+          <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
+              <div>
+                <h3 className="text-2xl font-semibold">
+                  General Manager
+                </h3>
+                <p className="mt-1 text-zinc-600">
+                  The Shipyard, Berry College
+                </p>
+              </div>
+
+              <p className="text-sm font-medium text-zinc-500">
+                Student-run bookstore
+              </p>
+            </div>
+
+            <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-6 text-zinc-600">
+              <li>
+                Managed daily operations, coordinated student staff, and helped
+                support store strategy.
+              </li>
+              <li>
+                Used Shopify, Clover, and internal sales data to better
+                understand performance, seasonality, and customer behavior.
+              </li>
+              <li>
+                Connected business operations with analytical decision-making to
+                improve planning and communication.
+              </li>
+            </ul>
+          </div>
+
+          <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
+              <div>
+                <h3 className="text-2xl font-semibold">
+                  Economics & Data Analytics Student
+                </h3>
+                <p className="mt-1 text-zinc-600">Berry College</p>
+              </div>
+
+              <p className="text-sm font-medium text-zinc-500">
+                Undergraduate coursework and projects
+              </p>
+            </div>
+
+            <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-6 text-zinc-600">
+              <li>
+                Completed applied projects involving econometrics, machine
+                learning, data visualization, public policy, and business
+                analytics.
+              </li>
+              <li>
+                Built technical skills in Python, R, SQL, Excel, Power BI, and
+                statistical modeling.
+              </li>
+              <li>
+                Developed interest in research questions that connect economics,
+                policy, and real-world data.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -155,35 +280,6 @@ export default function Home() {
               </p>
             </Link>
           ))}
-        </div>
-      </section>
-
-      <section id="experience" className="mx-auto max-w-6xl px-6 py-20">
-        <p className="text-sm font-medium uppercase tracking-[0.3em] text-zinc-500">
-          Experience
-        </p>
-        <h2 className="mt-3 text-4xl font-semibold tracking-tight">
-          Leadership and applied work
-        </h2>
-
-        <div className="mt-8 grid gap-5 md:grid-cols-2">
-          <div className="rounded-3xl border border-zinc-200 bg-zinc-50 p-6">
-            <h3 className="text-xl font-semibold">General Manager — The Shipyard</h3>
-            <p className="mt-3 text-sm leading-6 text-zinc-600">
-              Managed daily operations for Berry College’s student-run bookstore,
-              coordinated student staff, and worked with sales and customer data
-              to support planning and decision-making.
-            </p>
-          </div>
-
-          <div className="rounded-3xl border border-zinc-200 bg-zinc-50 p-6">
-            <h3 className="text-xl font-semibold">Economics & Data Analytics Student</h3>
-            <p className="mt-3 text-sm leading-6 text-zinc-600">
-              Coursework and projects focused on econometrics, machine learning,
-              visualization, business analytics, and applied research using
-              real-world datasets.
-            </p>
-          </div>
         </div>
       </section>
 
@@ -238,7 +334,7 @@ export default function Home() {
 
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href="mailto:your.email@example.com"
+              href={`mailto:${EMAIL}`}
               className="rounded-full bg-white px-5 py-3 text-sm font-medium text-zinc-950"
             >
               Email

@@ -107,6 +107,17 @@ export default function Home() {
               Coursework and projects focused on econometrics, machine learning,
               data visualization, and policy analysis using real-world datasets.
             </p>
+
+          </div>
+                    <div className="rounded-3xl border border-zinc-800 bg-zinc-900 p-6">
+            <h3 className="text-xl font-semibold">
+              Data Engineering Intern
+            </h3>
+
+            <p className="mt-3 text-sm leading-6 text-zinc-300">
+              Coursework and projects focused on econometrics, machine learning,
+              data visualization, and policy analysis using real-world datasets.
+            </p>
           </div>
         </div>
       </section>
@@ -143,7 +154,7 @@ export default function Home() {
         <h2 className="text-3xl font-semibold">Contact</h2>
 
         <p className="mt-4 text-zinc-300">
-          Email: your.email@example.com
+          Email: <a href="mailto:ebrown0715@gmail.com" className="text-zinc-400 hover:text-zinc-200">ebrown0715@gmail.com</a>
         </p>
       </section>
 

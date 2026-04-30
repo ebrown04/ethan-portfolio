@@ -23,4 +23,26 @@ export const projects = [
     pdf: "#",
     github: "#",
   },
+  {
+  slug: "gas-south-data-engineering",
+  title: "Data Engineering & Analytics — Gas South",
+  category: "Data Engineering / Analytics",
+  summary:
+    "Built data pipelines and analytics workflows to support operational and business decision-making using real-world data.",
+  content: `
+  <p><strong>Overview:</strong> Developed data engineering workflows to transform raw operational data into structured datasets for analytics and business decision-making.</p>
+
+  <p><strong>Key Contributions:</strong></p>
+  <ul>
+    <li>Designed and implemented data cleaning and transformation pipelines</li>
+    <li>Worked with large-scale datasets to improve data quality and consistency</li>
+    <li>Automated portions of the data processing workflow</li>
+    <li>Supported downstream analysis for business insights</li>
+  </ul>
+
+  <p><strong>Technical Stack:</strong> Python, pandas, SQL, data processing pipelines</p>
+
+  <p><strong>Takeaway:</strong> This project strengthened my ability to work with real-world data systems, bridging the gap between raw data and applied analysis.</p>
+`,  
+}
 ];

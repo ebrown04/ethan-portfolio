@@ -29,7 +29,7 @@ export default function Home() {
       <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-24 md:grid-cols-[1.2fr_0.8fr]">
         <div>
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-zinc-500">
-            Economics · Data Analytics · Applied Research
+            Economics · Data Analytics · Applied Microeconomic Research
           </p>
 
           <h1 className="max-w-4xl text-5xl font-semibold tracking-tight text-zinc-950 md:text-6xl">
@@ -109,6 +109,18 @@ export default function Home() {
               Expected May 2026
             </p>
           </div>
+                    <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
+            <div>
+              <h3 className="text-2xl font-semibold">University of Tennessee, Knoxville</h3>
+              <p className="mt-1 text-zinc-600">
+                M.A.
+              </p>
+            </div>
+
+            <p className="text-sm font-medium text-zinc-500">
+              Aug 2026 - May 2027 (expected)
+            </p>
+          </div>
 
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             <div>
@@ -120,16 +132,6 @@ export default function Home() {
                 learning, public policy, and data-driven decision-making.
               </p>
             </div>
-
-            <div>
-              <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500">
-                Graduate direction
-              </h4>
-              <p className="mt-3 text-sm leading-6 text-zinc-600">
-                Preparing for graduate study in economics with the long-term goal
-                of pursuing a PhD in Economics.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -139,7 +141,7 @@ export default function Home() {
           Experience
         </p>
         <h2 className="mt-3 text-4xl font-semibold tracking-tight">
-          Resume-style experience
+          Relevant work experience
         </h2>
 
         <div className="mt-8 space-y-6">
@@ -147,13 +149,13 @@ export default function Home() {
             <div className="flex flex-col justify-between gap-2 md:flex-row md:items-start">
               <div>
                 <h3 className="text-2xl font-semibold">
-                  Data Engineering & Analytics
+                  Data Engineering Internship
                 </h3>
                 <p className="mt-1 text-zinc-600">Gas South</p>
               </div>
 
               <p className="text-sm font-medium text-zinc-500">
-                Data / Analytics Experience
+                Data Engineering Experience
               </p>
             </div>
 
@@ -172,7 +174,7 @@ export default function Home() {
               </li>
               <li>
                 Strengthened technical experience across data pipelines, SQL,
-                Python, and applied analytics workflows.
+                Python, and data warehouse workflows.
               </li>
             </ul>
           </div>
@@ -195,16 +197,13 @@ export default function Home() {
 
             <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-6 text-zinc-600">
               <li>
-                Managed daily operations, coordinated student staff, and helped
-                support store strategy.
+                 Lead operations for a student-run enterprise generating $500K+ in annual revenue.
               </li>
               <li>
-                Used Shopify, Clover, and internal sales data to better
-                understand performance, seasonality, and customer behavior.
+                Manage training and day-to-day supervision of 15+ student employees.
               </li>
               <li>
-                Connected business operations with analytical decision-making to
-                improve planning and communication.
+                Implemented new systems (Thrive POS, Microsoft Teams) to streamline communication and order processing.
               </li>
             </ul>
           </div>
@@ -230,8 +229,7 @@ export default function Home() {
                 analytics.
               </li>
               <li>
-                Built technical skills in Python, R, SQL, Excel, Power BI, and
-                statistical modeling.
+                Built technical skills in Python, R, SQL, Sata, Excel, and Power BI.
               </li>
               <li>
                 Developed interest in research questions that connect economics,

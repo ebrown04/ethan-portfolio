@@ -109,7 +109,7 @@ export default function ProjectPage() {
             </a>
           )}
           {project.map && (
-            <div className="relative left-1/2 mt-16 w-screen -translate-x-1/2 px-6">
+            <section className="mt-20 w-full px-6">
               <div className="mx-auto max-w-7xl">
                 <h2 className="text-3xl font-semibold">Interactive Map</h2>
 
@@ -118,15 +118,17 @@ export default function ProjectPage() {
                   highlighting spatial pricing patterns and clustering behavior.
                 </p>
 
-                <div className="mt-6 overflow-hidden rounded-3xl border border-zinc-200 shadow-sm">
-                  <iframe
-                    src={project.map}
-                    className="h-[85vh] w-full"
-                    title="Airbnb Map"
-                  />
+                <div className="mt-6 w-full overflow-hidden rounded-3xl border border-zinc-200 shadow-sm">
+                  <div className="relative w-full" style={{ paddingTop: "60%" }}>
+                    <iframe
+                      src={project.map}
+                      className="absolute left-0 top-0 h-full w-full"
+                      title="Airbnb Map"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
+            </section>
           )}
 
         </div>

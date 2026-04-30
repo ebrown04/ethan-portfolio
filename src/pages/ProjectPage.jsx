@@ -110,27 +110,6 @@ export default function ProjectPage() {
           )}
 
         </div>
-
-        {/* Project Structure */}
-        <section className="mt-16 border-t border-zinc-200 pt-10">
-          <h2 className="text-2xl font-semibold">Project breakdown</h2>
-
-          <div className="mt-6 grid gap-5">
-            {[
-              ["Research Question", "What question was this project designed to answer?"],
-              ["Data", "What dataset did you use, and what made it challenging?"],
-              ["Methods", "What models, tools, or techniques were used?"],
-              ["Results", "What did you find? Include metrics or key insights."],
-              ["Reflection", "What did you learn and how would you improve it?"],
-            ].map(([title, text]) => (
-              <div key={title} className="rounded-3xl border border-zinc-200 bg-white p-6">
-                <h3 className="text-lg font-semibold">{title}</h3>
-                <p className="mt-2 text-sm text-zinc-600">{text}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
       </section>
     </main>
   );

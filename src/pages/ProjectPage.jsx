@@ -8,7 +8,7 @@ export default function ProjectPage() {
   if (!project) {
     return (
       <main className="min-h-screen bg-white px-6 py-20 text-zinc-950">
-        <section className="mx-auto max-w-4xl">
+        <section className="mx-auto max-w-5xl">
           <h1 className="text-3xl font-semibold">Project not found</h1>
           <Link to="/" className="mt-6 inline-block underline">
             Back home
@@ -20,27 +20,23 @@ export default function ProjectPage() {
 
   return (
     <main className="min-h-screen bg-white text-zinc-950">
-      <section className="mx-auto max-w-4xl px-6 py-20">
-
-        {/* Back */}
+      <section className="mx-auto max-w-6xl px-6 py-20">
         <Link to="/" className="text-sm text-zinc-500 hover:text-zinc-950">
           ← Back to portfolio
         </Link>
 
-        {/* Header */}
         <p className="mt-12 text-sm font-medium uppercase tracking-[0.3em] text-zinc-500">
           {project.category}
         </p>
 
-        <h1 className="mt-4 text-5xl font-semibold tracking-tight">
+        <h1 className="mt-4 max-w-4xl text-5xl font-semibold tracking-tight">
           {project.title}
         </h1>
 
-        <p className="mt-6 text-lg leading-8 text-zinc-600">
+        <p className="mt-6 max-w-4xl text-lg leading-8 text-zinc-600">
           {project.description}
         </p>
 
-        {/* Tools */}
         {project.tools && (
           <div className="mt-8 flex flex-wrap gap-3">
             {project.tools.map((tool) => (
@@ -54,9 +50,7 @@ export default function ProjectPage() {
           </div>
         )}
 
-        {/* Links (AUTO CONDITIONAL) */}
         <div className="mt-12 grid gap-5 md:grid-cols-2">
-
           {project.pdf && (
             <a
               href={project.pdf}
@@ -108,28 +102,26 @@ export default function ProjectPage() {
               </p>
             </a>
           )}
-          {project.map && (
-            <section className="relative left-1/2 mt-20 w-screen -translate-x-1/2 px-6">
-              <div className="mx-auto max-w-7xl">
-                <h2 className="text-3xl font-semibold">Interactive Map</h2>
-
-                <p className="mt-4 max-w-3xl text-sm leading-6 text-zinc-600">
-                  This map visualizes Airbnb listings across major U.S. cities,
-                  highlighting spatial pricing patterns and clustering behavior.
-                </p>
-
-                <div className="mt-6 overflow-hidden rounded-3xl border border-zinc-200 shadow-sm">
-                  <iframe
-                    src={project.map}
-                    className="h-[75vh] min-h-[600px] w-full"
-                    title="Airbnb Map"
-                  />
-                </div>
-              </div>
-            </section>
-          )}
-
         </div>
+
+        {project.map && (
+          <section className="mt-20">
+            <h2 className="text-3xl font-semibold">Interactive Map</h2>
+
+            <p className="mt-4 max-w-3xl text-sm leading-6 text-zinc-600">
+              This map visualizes Airbnb listings across major U.S. cities,
+              highlighting spatial pricing patterns and clustering behavior.
+            </p>
+
+            <div className="mt-6 overflow-hidden rounded-3xl border border-zinc-200 shadow-sm">
+              <iframe
+                src={project.map}
+                className="h-[75vh] min-h-[600px] w-full"
+                title="Airbnb Map"
+              />
+            </div>
+          </section>
+        )}
       </section>
     </main>
   );

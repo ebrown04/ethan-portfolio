@@ -105,7 +105,7 @@ export default function Home() {
 
             <p className="mt-3 text-sm leading-6 text-zinc-300">
               Coursework and projects focused on econometrics, machine learning,
-              data visualization, and applied research using real-world datasets.
+              data visualization, and policy analysis using real-world datasets.
             </p>
           </div>
         </div>
